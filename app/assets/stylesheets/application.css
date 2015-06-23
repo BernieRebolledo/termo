@@ -15,6 +15,9 @@
  *= require bootstrap.min
  *= require_self
  */
+body{
+  background-color: grey;
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>li>a, .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: white;
   background-color: transparent;
@@ -38,6 +41,9 @@
   /* color: whitesmoke; */
   /*box-shadow: aqua;*/
 }
+.section-padding{
+  padding: 20px 0;
+}
 .logo{
 	width: 240px;
  	margin-top: -17px;
@@ -47,15 +53,16 @@
 	margin: 0 auto;
 }
 #services{
+  position: absolute;
+  left: 0;
 	color: #808080;
-	padding-top: 100px;
-	padding-bottom: 100px;
+  padding: 30px;
 	overflow: hidden;
 	background: white;
 }
 #services-header{
 	color: #404040;
-	padding-bottom: 75px;
+	padding-bottom: 45px;
 	text-align: center;
 }
 .service-icon {
@@ -69,12 +76,20 @@
   position: relative;
   transition:.5s;
 }
-.service-icon:hover{
+#si-blue:hover{
 	border: 10px solid royalblue;
+}
+#si-gold:hover{
+  border: 10px solid gold;
+}
+#si-red:hover{
+  border: 10px solid red;
+}
+#si-green:hover{
+  border: 10px solid green;
 }
 
 .red-border-bottom:before {
-
   position: absolute;
   margin: auto;
   z-index: 1;
@@ -85,6 +100,40 @@
   bottom: -9px;
   left: 12.5%;
 }
+.blue-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: royalblue;
+  bottom: -9px;
+  left: 12.5%;
+}
+.gold-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: gold;
+  bottom: -9px;
+  left: 12.5%;
+}
+.green-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: green;
+  bottom: -9px;
+  left: 12.5%;
+}
+
 #services h5 {
 
   margin-bottom: 15px;
@@ -128,3 +177,30 @@
   height: 88px;
 }
 .top-buffer { margin-top:30px; }
+.jumbotron{
+  color: white;
+  background: transparent;
+  position: absolute;
+  top: 120px;
+}
+.video {
+  position: relative;
+  max-width: 1200px;
+  min-width: 100%;
+}
+.margin-0{
+  margin: 0;
+}
+.padding-0{
+  padding: 0;
+}
+.relative{
+  position: relative;
+}
+#tittle{
+  height: 500px;
+}
+.border-none{
+  border: none;
+  border-radius: 0px;
+}
