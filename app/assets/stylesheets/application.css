@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require normalize
+ *= require font-awesome.min
+ *= require bootstrap.min
+ *= require_self
+ */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>li>a, .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: transparent;
+  color: white;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: royalblue;
+}
+.navbar-default {
+  background-color: royalblue;
+  /* border-color: transparent; */
+  /* color: whitesmoke; */
+  /*box-shadow: aqua;*/
+}
+.logo{
+	width: 240px;
+ 	margin-top: -17px;
+}
+.main-container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#services{
+	color: #808080;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	overflow: hidden;
+	background: white;
+}
+#services-header{
+	color: #404040;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.service-icon {
+  margin-bottom: 30px;
+  width: 145px;
+  height: 145px;
+  margin: auto;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  margin-bottom: 20px;
+  position: relative;
+  transition:.5s;
+}
+.service-icon:hover{
+	border: 10px solid royalblue;
+}
+
+.red-border-bottom:before {
+
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #e96656;
+  bottom: -9px;
+  left: 12.5%;
+}
+#services h5 {
+
+  margin-bottom: 15px;
+  color: #404040;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.pixeden {
+  height: 63px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.pd-icon-mtm {
+  background: url(mtm.png) no-repeat;
+  width: 90px;
+  height: 100px;
+}
+.pd-icon-design {
+  background: url(design.png) no-repeat;
+  width: 65px;
+}
+.pd-icon-acc {
+  background: url(acc.png) no-repeat;
+  background-size: 95px 75px;
+  width: 95px;
+  height: 77px;
+}
+.pd-icon-eco {
+  background: url(eco.png) no-repeat;
+  background-size: 95px 88px;
+  width: 95px;
+  height: 88px;
+}
+.top-buffer { margin-top:30px; }
